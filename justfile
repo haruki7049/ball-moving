@@ -1,7 +1,11 @@
-build:
+build: gen_love
     mkdir -p dist
-    zip -rj src.zip src
     mv src.zip dist/ball-moving.love
+
+[working-directory: 'src']
+gen_love:
+    zip -r src.zip ./*
+    mv src.zip ..
 
 clean:
     rm -r dist
