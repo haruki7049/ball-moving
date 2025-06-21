@@ -30,7 +30,7 @@
         }:
         let
           lovefile = pkgs.stdenvNoCC.mkDerivation {
-            name = "dotgame";
+            name = "ball-moving";
             src = lib.cleanSource ./.;
 
             buildInputs = [
