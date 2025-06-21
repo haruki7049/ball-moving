@@ -1,4 +1,4 @@
-local variables = require "objects/red_ball/variables"
+local variables = require("objects/red_ball/variables")
 
 return {
   variables = variables,

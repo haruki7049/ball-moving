@@ -56,11 +56,18 @@
             # Nix
             programs.nixfmt.enable = true;
 
+            # Lua
+            programs.stylua.enable = true;
+
             # GitHub Actions
             programs.actionlint.enable = true;
 
             # Markdown
             programs.mdformat.enable = true;
+
+            settings.formatter = {
+              stylua.settingsFile = ./stylua.toml;
+            };
           };
 
           devShells.default = pkgs.mkShell {
