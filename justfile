@@ -9,3 +9,6 @@ gen_love:
 
 clean:
     rm -r dist
+
+run:
+    love dist/ball-moving.love
