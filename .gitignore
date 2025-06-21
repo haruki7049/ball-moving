@@ -1,0 +1,8 @@
+# Nix's result
+result
+
+# Direnv's dotfiles
+.direnv/
+
+# Dist
+/dist/
