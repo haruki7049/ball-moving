@@ -39,16 +39,11 @@ function love.update()
 end
 
 function love.draw()
-  drawRedBall()
-  drawBlueBall()
+  drawBall(red_ball)
+  drawBall(blue_ball)
 end
 
-function drawRedBall()
-    love.graphics.setColor(red_ball.color.r, red_ball.color.g, red_ball.color.b)
-    love.graphics.ellipse("fill", red_ball.x, red_ball.y, red_ball.radiusx, red_ball.radiusy, 100)
-end
-
-function drawBlueBall()
-    love.graphics.setColor(blue_ball.color.r, blue_ball.color.g, blue_ball.color.b)
-    love.graphics.ellipse("fill", blue_ball.x, blue_ball.y, blue_ball.radiusx, blue_ball.radiusy, 100)
+function drawBall(ball)
+  love.graphics.setColor(ball.color.r, ball.color.g, ball.color.b)
+  love.graphics.ellipse("fill", ball.x, ball.y, ball.radiusx, ball.radiusy, 100)
 end
