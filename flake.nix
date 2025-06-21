@@ -40,7 +40,7 @@
 
             installPhase = ''
               mkdir -p $out/share
-              cp dist/dotgame.love $out/share
+              cp dist/* $out/share
             '';
           };
         in
