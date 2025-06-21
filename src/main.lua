@@ -1,7 +1,6 @@
 local graphics = require("graphics")
 local objects = require("objects")
 --local keys = require("keys")
---local settings = require("settings")
 
 function love.update()
   -- Exit by escape key
