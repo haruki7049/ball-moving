@@ -1,5 +1,5 @@
 function love.load()
-  ball = { x = 5; y = 5; radiusx = 25; radiusy = 25; }
+  ball = { x = 5; y = 5; radiusx = 25; radiusy = 25; color = { r = 1, g = 0, b = 0, }, }
 end
 
 function love.update()
@@ -22,6 +22,6 @@ function love.draw()
 end
 
 function drawBall()
-    love.graphics.setColor(1, 0, 0)
+    love.graphics.setColor(ball.color.r, ball.color.g, ball.color.b)
     love.graphics.ellipse("fill", ball.x, ball.y, ball.radiusx, ball.radiusy, 100)
 end
